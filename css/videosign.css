@@ -1,0 +1,567 @@
+/* ------------- */
+/* Common Styles */
+/* ------------- */
+
+body {
+  font-family: Roboto, Calibri, sans-serif;
+  overflow: hidden;
+  padding-right: 0 !important;
+}
+
+.carousel-caption {
+  position: initial;
+}
+
+.tool-menu > h2 {
+  color: #fff;
+}
+
+a {
+  color: #de2830;
+}
+
+h3 {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #787878;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.no-float {
+  display: table-cell;
+  float: none;
+}
+
+.meeting-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns:
+    287px 1fr 19.09%;
+}
+
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 500px;
+    margin: 30vh auto;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+.modal {
+  overflow: hidden !important;
+}
+
+.modal-dialog {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hide-element {
+  display: none !important;
+}
+
+/* ---------- */
+/* Left Panel */
+/* ---------- */
+
+.left-panel {
+  background: #fff;
+  padding-left: 22px;
+  padding-right: 22px;
+  z-index: 9999;
+}
+
+.items {
+  padding-left: 5%;
+  margin-top: 13px;
+}
+
+.left-links {
+  display: inline-block;
+  font-size: 14px;
+  color: #de2830;
+  padding: 4px 12px;
+}
+
+.logo-container {
+  min-height: 12.7vh;
+  margin-right: calc(1.5 * 1vw);
+  padding-top: 24px;
+  padding-left: 7px;
+}
+
+.meeting-button {
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: top;
+  margin-left: -1px;
+  margin-right: 1px;
+}
+
+.upload {
+  content: url(../assets/sbxicons/icons-upload.svg);
+}
+
+.tosign {
+  content: url(../assets/sbxicons/icons-edit.svg);
+}
+
+.toread {
+  content: url(../assets/sbxicons/icons-folder.svg);
+}
+
+.signed {
+  content: url(../assets/sbxicons/icons-check-on.svg);
+}
+
+.recordings {
+  content: url(../assets/sbxicons/icons-video.svg);
+}
+
+.chat {
+  content: url(../assets/sbxicons/icons-chat.svg);
+}
+
+.startrec {
+  content: url(../assets/sbxicons/record.svg);
+}
+
+.refresh {
+  content: url(../assets/sbxicons/icons-refresh.svg);
+}
+
+.healthcheck {
+  content: url(../assets/sbxicons/icon-medical.svg);
+  padding: 2px;
+}
+
+.devices {
+  content: url(../assets/sbxicons/icon-shield.svg);
+  padding: 2px;
+}
+
+.logout {
+  content: url(../assets/sbxicons/icons-exit.svg);
+}
+
+.tools {
+  min-height: calc(1vh * 45);
+}
+
+@media (max-height: 830px) {
+  .tools {
+    min-height: 0;
+  }
+}
+
+.doc-view-enabled {
+  grid-template-columns: 93px 248px 1fr 19.09%;
+}
+
+.half-hr {
+  width: 50%;
+  float: right;
+}
+
+/* ------------------ */
+/* Document Tool Menu */
+/* ------------------ */
+
+.tool-menu {
+  font-size: 24px;
+  color: #fff;
+  background: #272727;
+  padding: 25px;
+  overflow-y: scroll;
+  z-index: 9999;
+}
+
+.tool-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tool-menu::-webkit-scrollbar-track {
+  background: #272727; 
+}
+ 
+.tool-menu::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius:5px
+}
+
+.tool-menu::-webkit-scrollbar-thumb:hover {
+  background: #888; 
+}
+
+.btn-tool-menu {
+  width: 192px;
+  height: 36px;
+  opacity: 0.5;
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: black;
+  margin-top: 8px;
+  padding-top: 3%;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.doc-tooltip:hover{
+  opacity: 0.75;
+  background: #26aae1;
+}
+
+.document-name {
+  font-size: 24px;
+}
+
+.tag {
+  font-size: 12px;
+}
+
+
+/* ------------ */
+/* Center Panel */
+/* ------------ */
+
+.center-panel {
+  background: #f2f2f2;
+  height: 100vh;
+  text-align: center;
+}
+
+.meeting-date {
+  min-height: calc(1vh*4.16);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 4.16%;
+  float: left !important;
+  margin-left: 7.35%;
+  margin-right: 22.06%;
+}
+
+.meeting-timer {
+  min-height: calc(1vh*4.16);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 4.16%;
+  margin-right: 7%;
+  margin-left: 7.35%;
+  float: right !important;
+}
+
+.meeting-title {
+  min-height: calc(1vh*6.77);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.87);
+  float: left;
+  margin-left: 7.35%;
+  margin-right: 22.06%;
+}
+
+.media-control-panel {
+  border-radius: 8px;
+  background-color: white;
+  top: 92vh;
+  left: 39vw;
+  position: absolute;
+  display: block;
+  width: 280px;
+  height: calc(1vh * 10);
+  z-index: 9999;
+  padding-top: 0.2%;
+  -webkit-box-shadow: 0px -1px 15px -9px #3d3b3d;
+  box-shadow: 0px -1px 15px -9px #3d3b3d;
+}
+
+.btn-open-doc {
+  width: 300px;
+  height: 50px;
+  border-radius: 3px;
+  background: #de2830;
+  color: #fff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-open-doc:hover {
+  background-color: #b11e26;
+}
+
+.view-doc-container {
+  display: inline-block;
+  width: 100%;
+  padding-top: 25vh;
+}
+
+
+/* ----------- */
+/* Right Panel */
+/* ----------- */
+
+.right-panel {
+  padding: 15px 15px;
+  position: relative;
+}
+
+.webcam-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 13px;
+  row-gap: 19px
+}
+
+.first-cam {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  height:30.45vh;
+  background: url("../assets/interactive/first-ppt.png") !important;
+}
+
+.second-cam {
+  grid-column: 1;
+  grid-row: 2;
+  background: url("../assets/interactive/second-ppt.png") !important;
+}
+
+.third-cam {
+  grid-column: 2;
+  grid-row: 2;
+  background: url("../assets/interactive/third-ppt.png") !important;
+}
+
+.fourth-cam {
+  grid-column: 1;
+  grid-row: 3;
+  background: url("../assets/interactive/fourth-ppt.png") !important;
+}
+
+.fifth-cam {
+  grid-column: 2;
+  grid-row: 3;
+  background: url("../assets/interactive/fifth-ppt.png") !important;
+}
+
+.cam {
+  z-index: 99999;
+}
+
+.first-cam, .second-cam, .third-cam, .fourth-cam, .fifth-cam {
+  border-radius: 8px;
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative;
+}
+
+.second-cam, .third-cam, .fourth-cam, .fifth-cam {
+  height:14.15vh;
+}
+
+.innerdiv {
+  min-width: calc(1vw*18);
+  width: 100%;
+  height: 100vh;
+}
+
+.name-label {
+  height: 30px;
+  background: rgba(0,0,0,0.5);
+  color: #eee;
+  text-align: center;
+  padding-top: 3px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+}
+
+.btn-close-doc {
+  width: calc(100% - 30px);
+  height: 50px;
+  border-radius: 3px;
+  background: #de2830;
+  color: #fff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 80px;
+}
+
+.btn-close-doc:hover {
+  background-color: #b11e26;
+}
+
+.btn-control-doc-open {
+  bottom: 22px !important;
+  transition: 0s !important;
+}
+
+.btn-control {
+  width: calc(100% - 30px);
+  height: 50px;
+  border-radius: 3px;
+  background: #de2830;
+  color: #fff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.btn-control:hover {
+  background-color: #b11e26;
+}
+
+
+/* ------------------- */
+/* Stream Control Menu */
+/* ------------------- */
+
+.stream-control-menu {
+  border-radius: 8px 8px 0 0;
+  background-color: white;
+  bottom: 0;
+  left: 39vw;
+  position: absolute;
+  display: block;
+  width: 280px;
+  height: 76px;
+  z-index: 999;
+  padding-top: 0.2%;
+  -webkit-box-shadow: 0px -1px 15px -9px #3d3b3d;
+  box-shadow: 0px -1px 15px -9px #3d3b3d;
+  text-align: center;
+  z-index: 9999;
+}
+
+.hide-menu-controls {
+  bottom: -56px;
+}
+
+.toggle-stream-controls {
+  float: left;
+  margin-bottom: 1.4%;
+  width: 100%;
+  padding-left: 45%;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  top: 0;
+  background-color: #C5C7C8;
+  width: 28px;
+  height: 5px;
+  border-radius: 28px;
+  float: left;
+}
+
+.stream-control-option {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 28px;
+  margin-left: 8.5%;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.blue-icon {
+  background: #de2830;
+}
+
+.green-icon {
+  background: #6bc86a;
+}
+
+.screenshare-icon {
+  background-image: url("../assets/sbxicons/icons-screen-share.png");
+}
+
+.mic-icon {
+  background-image: url("../assets/sbxicons/icons-mic.png");
+}
+
+.cam-icon {
+  background-image: url("../assets/sbxicons/icons-video.png");
+}
+
+.switch-cam-icon {
+  background-image: url("../assets/sbxicons/icons-camera-switch.png");
+}
+
+.screenshare-icon, .mic-icon, .cam-icon, .switch-cam-icon {
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+}
+
+/* ---------------------- */
+/* Mobile Warning Message */
+/* ---------------------- */
+
+.mobile-warning-message {
+  display:none;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+@media (max-width: 997px) {
+  .meeting-grid, .stream-control-menu {
+    display:none;
+  }
+
+  .mobile-warning-message {
+    display:block;
+  }
+}
